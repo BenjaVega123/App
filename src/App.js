@@ -1,14 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <body>
       <nav class="navMenu">
-        <a href="#">Home</a>
-        <a href="#">Blog</a>
-        <a href="#">Work</a>
-        <a href="#">About</a>
+        <a href="/">Home</a>
+        <a href="/productos">Productos</a>
+        <a href="/registro">Registro</a>
+        <a href="/nosotros">Nosotros</a>
         <div class="dot"></div>
       </nav>
   </body>
