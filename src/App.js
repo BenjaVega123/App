@@ -1,16 +1,33 @@
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import AboutPage from './pages/AboutPage/AboutPage';
 
 function App() {
   return (
-    <body>
-      <nav class="navMenu">
-        <a href="/">Home</a>
-        <a href="/productos">Productos</a>
-        <a href="/registro">Registro</a>
-        <a href="/nosotros">Nosotros</a>
-        <div class="dot"></div>
+  <div className='container'>
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div className="container">
+          <a className="navbar-brand" href="/">Fukusuke Sushi-Delivery</a>
+          <ul className="navbar-nav me-auto">
+            <li className="nav-item" role="presentation">
+              <a className="nav-link" href="/productos">Productos</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/registro">Registrate</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/acerca">Sobre Nosotros</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/cart">Carrito de compras</a>
+            </li>
+          </ul>
+        </div>
       </nav>
-  </body>
+    <Routes>
+      <Route path='/acerca' element={<AboutPage/>} />
+    </Routes>
+  </div>
   );
 }
 
