@@ -16,7 +16,7 @@ function App() {
               <a className="nav-link" href="/registro">Registrate</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/acerca">Sobre Nosotros</a>
+              <a className="nav-link" href="/app/acerca">Sobre Nosotros</a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="/cart">Carrito de compras</a>
@@ -25,7 +25,7 @@ function App() {
         </div>
       </nav>
     <Routes>
-      <Route path='/acerca' element={<AboutPage/>} />
+      <Route path='/app/acerca' element={<AboutPage/>} />
     </Routes>
   </div>
   );
